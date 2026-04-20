@@ -14,7 +14,7 @@ public class DB {
 	private static Connection conn = null;
 	
 	// Criação da conexão do banco de dados
-	/*  O método verifica se o banco ja foi conectado, caso não dentro de um try 
+	/*  O método verifica se o banco ja foi conectado, caso ainda não inicia dentro de um try 
 	 *  é carregado as propriedades dentro do obj props
 	 *  em seguida é carregado a url através do props
 	 *  por fim utilizamos o DriverManeger passando a url e as propierties para conectar
