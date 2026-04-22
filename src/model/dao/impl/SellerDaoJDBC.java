@@ -117,9 +117,9 @@ public class SellerDaoJDBC implements SellerDao{
 				
 				Seller obj = instantiateSeller(rs, dep);
 				list.add(obj);
-				return list;
 				
 			}
+			return list;
 					
 		} catch (SQLException e) {
 			throw new DbException(e.getMessage());
@@ -128,8 +128,6 @@ public class SellerDaoJDBC implements SellerDao{
 			DB.closeResultSet(rs);
 		}
 		
-		
-		return null;
 	}
 
 	@Override
