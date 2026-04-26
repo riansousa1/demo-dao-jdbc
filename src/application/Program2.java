@@ -10,14 +10,19 @@ public class Program2 {
 
 	public static void main(String[] args) {
 		
+		DepartmentDao depDao = DaoFactory.createDepartment();
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("\n==== TESTE insert ====");
-		DepartmentDao depDao = DaoFactory.createDepartment();
+		System.out.println("\n==== TESTE 1 insert ====");
 		Department dep = new Department(null, "D3");
-		depDao.insert(dep);
+		//depDao.insert(dep);
 		System.out.println("Insert realizado! new Id = " + dep.getId());	
 		
+		System.out.println("\n==== TESTE 2 update ====");
+		
+		Department updateDep = new Department(7, "D4");
+		depDao.update(updateDep);
+		System.out.println("Update complete");
 		
 	}
 
