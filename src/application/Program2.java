@@ -26,9 +26,15 @@ public class Program2 {
 		
 		System.out.println("\n==== TESTE 3 delete ====");
 		System.out.print("Enter id for delete test: ");
-		int id = sc.nextInt();
-		depDao.deleteById(id);
+		//int id = sc.nextInt();
+		//depDao.deleteById(id);
 		System.out.println("Deleted complete!");
+		
+		System.out.println("\n==== TESTE 4 findById ====");
+		
+		Department findDep = depDao.findById(3);
+		System.out.println(findDep);
+		
 	}
 
 }
